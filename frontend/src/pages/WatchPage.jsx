@@ -5,7 +5,7 @@ import { useContentStore } from './../store/content';
 import Navbar from './../components/Navbar';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ReactPlayer from "react-player";
-import { ORILGINAL_IMG_BASE_URL, SMALL_IMG_BASE_URL } from "../utils/constants";
+import { ORIGINAL_IMG_BASE_URL, SMALL_IMG_BASE_URL } from "../utils/constants";
 import { formatReleaseDate } from "../utils/dateFunction";
 import WatchPageSkeleton from "../components/skeletons/WatchPageSkeleton";
 
@@ -173,7 +173,7 @@ const WatchPage = () => {
             <p className="mt-4 text-lg">{content?.overview}</p>
           </div>
           <img
-            src={ORILGINAL_IMG_BASE_URL + content?.poster_path}
+            src={ORIGINAL_IMG_BASE_URL + content?.poster_path}
             alt="Poster"
             className="max-h-[600px] rounded-md"
           />

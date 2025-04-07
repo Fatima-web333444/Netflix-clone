@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import { Search } from "lucide-react";
 import toast from "react-hot-toast";
 import axios from "axios";
-import { ORILGINAL_IMG_BASE_URL } from "../utils/constants";
+import { ORIGINAL_IMG_BASE_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 
 const SearchPage = () => {
@@ -87,7 +87,7 @@ const SearchPage = () => {
 								{activeTab === "person" ? (
 									<div className='flex flex-col items-center'>
 										<img
-											src={ORILGINAL_IMG_BASE_URL + result.profile_path}
+											src={ORIGINAL_IMG_BASE_URL + result.profile_path}
 											alt={result.name}
 											className='max-h-96 rounded mx-auto'
 										/>
@@ -101,7 +101,7 @@ const SearchPage = () => {
 										}}
 									>
 										<img
-											src={ORILGINAL_IMG_BASE_URL + result.poster_path}
+											src={ORIGINAL_IMG_BASE_URL + result.poster_path}
 											alt={result.title || result.name}
 											className='w-full h-auto rounded'
 										/>
